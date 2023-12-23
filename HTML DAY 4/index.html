@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row;
+            justify-content: space-between;
+            background-image: linear-gradient(#fe8c00,#f83600);
+            color: white;
+        }
+        .headerbar1{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row;
+            padding: 10px;
+        }
+        .headerbar2{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row;
+            padding: 10px;
+            gap:15px;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            flex-direction: row;
+        }
+        .sidebar{
+            display: flex;
+            flex-direction: column;
+            flex-flow: column;
+            background-image: linear-gradient(#1e130c,#9a8478);
+            color:white;
+            padding:20px;
+            padding-top:50px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            flex-flow: column;
+            padding:5px;
+            padding-top:15px;
+            background-image: linear-gradient(#00c6ff,#0072ff);
+            /* border: solid yellow; */
+        }
+        .topcontent{
+            display: flex;
+            flex-direction: column;
+            flex-flow: column;
+            padding:10px;
+            /* border: solid blue; */
+        }
+        .downcontent{
+            display: flex;
+            flex-direction: column;
+            flex-flow: column;
+            padding:10px;
+            /* border: solid red; */
+        }
+        /* .downcontentheading{
+            border: solid purple; 
+        } */
+        .imagemainbar{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row;
+            justify-content: space-around;
+            gap: 10px;
+            /* border: solid green; */
+        }
+         .imagegallery{
+            display: flex;
+            flex-direction: column;
+            flex-flow: column;
+            padding: 10px;
+            border: 2px solid whitesmoke; 
+            align-items: center;
+            width: 290px;
+            max-width: 290px;
+            display: inline-block;
+        } 
+        
+        footer{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row;
+            background-image: linear-gradient(#fe8c00,#f83600);
+            justify-content: center;
+            color: white;
+            padding:10px
+        }
+
+        hr{
+            background-color: black;
+        }
+        button{
+            background-color: gray; 
+            color: white; 
+            padding: 8px; 
+            width: 35%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerbar1">
+            <div class="headerbar2">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Contact</div>
+            </div> 
+        </div>
+        <div class="headerbar1">
+            <span style="font-size: x-large;">Company Name</span>
+        </div>
+        <div class="headerbar1">
+            <div class="headerbar2">
+                <div><img src="Icons/5305154_fb_facebook_facebook logo_icon.svg" width="20px"></div>
+                <div><img src="Icons/11053969_x_logo_twitter_new_brand_icon.png" width="20px"></div>
+                <div><img src="Icons/104493_linkedin_icon.png" width="20px"></div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="sidebar">
+            <div>
+                Some Link
+                <hr>
+                Some Link
+                <hr>
+                Some Link
+                <hr>
+                Some Link
+                <hr>
+                Some Link
+                <hr>
+            </div>
+            <div style="text-align: center;">
+                <img src="images/azmathulla-shaik-K5TfhhrNs20-unsplash.jpg" width="200px" height="150px">
+            </div>
+        </div>
+        <div class="content">
+            <div class="topcontent">
+                <h2>Welcome to our Website</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores molestiae rem neque ipsa porro minus odio obcaecati consequuntur vel sint, modi delectus dolorem voluptatum odit quasi laudantium minima. Quibusdam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit deleniti quod est, fugit repudiandae sunt recusandae mollitia minima dignissimos inventore porro odit dolor? Praesentium expedita error et dolorem, sequi quisquam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quidem maiores a magnam consectetur ipsum quis eligendi distinctio quia. Maiores quo soluta voluptatibus cupiditate possimus autem quasi corrupti iure mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse quibusdam facere fuga, molestias blanditiis iure ut, sapiente cumque aut ex earum dolorem corrupti. Provident eveniet accusamus obcaecati sint voluptatem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+            <div class="downcontent">
+                <div class="downcontentheading">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="imagemainbar">
+                    <div class="imagegallery">
+                        <div><img src="images/daniel-korpai-pKRNxEguRgM-unsplash.jpg" width="290px" height="182px"></div>
+                        <div>
+                            <h3>Web Designing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, fugiat? Optio, dolore? Molestiae, neque. sit impedit. Lorem, ipsum dolor sit</p>
+                        </div>
+                        <div>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="imagegallery">
+                        <div><img src="images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" width="290px" height="200px"></div>
+                        <div>
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, fugiat? Optio, dolore? Molestiae, neque. sit impedit.</p>
+                        </div>
+                        <div>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="imagegallery">
+                        <div><img src="images/kevin-bhagat-zNRITe8NPqY-unsplash.jpg" width="290px" height="200px"></div>
+                        <div>
+                            <h3>Mobile App Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, fugiat? Optio, dolore? Molestiae, neque. sit impedit.</p>
+                        </div>
+                        <div>
+                            <button >Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span style="font-size: x-large;">Company Name</span>
+    </footer>
+
+</body>
+</html>
