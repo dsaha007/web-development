@@ -1,0 +1,358 @@
+        @font-face {
+        font-family: "Yanone Kaffeesatz";
+        src: url("fonts/YanoneKaffeesatz-VariableFont_wght.ttf");
+        }
+        @font-face {
+        font-family: "Baloo Bhai 2";
+        src: url("fonts/BalooBhai2-VariableFont_wght.ttf");
+        }
+        @font-face {
+        font-family: "Lora";
+        src: url("fonts/Lora-VariableFont_wght.ttf");
+        }
+        :root {
+        --prim-font: "Baloo Bhai 2";
+        --nav-color: rgb(25, 102, 211);
+        --prim-color: rgb(64, 124, 209);
+        --nav-title-font: "Yanone Kaffeesatz";
+        --title-font: "Lora";
+        }
+        #navbar {
+        display: flex;
+        align-items: center;
+        background-color: var(--nav-color);
+        height: 80px;
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        }
+        .navbar2 {
+        font-family: var(--nav-title-font);
+        color:white;
+        text-align: center;
+        background-color: var(--nav-color);
+        height: 80px;
+        width: 100%;
+        position: static;
+        padding-top:5px;
+        top:0px;
+        }
+        
+        #title {
+        display: flex;
+        align-items: center;
+        gap:10px
+        }
+
+        #navbar img {
+        height: 60px;
+        width: 60px;
+        margin-left: 20px;
+        }
+
+        #navbar img:hover {
+        cursor: pointer;
+        }
+
+        #title div {
+        color: white;
+        font-family: var(--nav-title-font);
+        font-size: 2rem;
+        }
+
+        #title div:hover {
+        cursor: pointer;
+        }
+
+        #navbar ul {
+        display: flex;
+        list-style-type: none;
+        margin: auto;
+        }
+
+        #navbar ul li {
+        font-size: 1.5rem;
+        }
+
+        #navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: var(--prim-font);
+        padding: 0px 50px;
+        }
+
+        #navbar ul li a:hover {
+        text-decoration: underline;
+        }
+
+        #navbar a button {
+        background-color: white;
+        margin: 0px 20px;
+        padding: 3px 15px;
+        border-radius: 25px;
+        font-weight: bolder;
+        font-size: 1.1rem;
+        font-family: var(--prim-font);
+        color: var(--nav-color);
+        text-decoration: none;
+        }
+
+        #navbar a button:hover {
+        transition-duration: 0.27s;
+        cursor: pointer;
+        color: white;
+        background-color: black;
+        }
+        
+        footer {
+        display: flex;
+        align-items: center;
+        background-color: var(--nav-color);
+        width: 100%;
+        gap:10px
+        }
+
+        footer img {
+        height: 50px;
+        width: 50px;
+        margin-left: 20px;
+        }
+
+        footer div {
+        color: white;
+        font-family: var(--nav-title-font);
+        font-size: 1.5rem;
+        }
+
+        footer img,
+        footer div:hover {
+        cursor: pointer;
+        }
+
+        footer ul {
+        display: flex;
+        list-style: none;
+        margin-left: 100px;
+        }
+
+        footer ul li {
+        padding: 0px 20px;
+        }
+
+        footer ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: var(--prim-font);
+        font-weight: bold;
+        }
+
+        footer ul li a:hover {
+        text-decoration: underline;
+        }
+        .main-title{
+            font-family: var(--title-font);
+            font-weight: 300 ;
+        }
+        body{
+            background: linear-gradient(rgba(255, 255, 255, .6),rgba(255, 255, 255, .6)), url(Background/pexels-taryn-elliott-4099034.jpg);
+            background-repeat: round;
+        }   
+        
+        header{
+            display: flex;
+            gap:100px;
+            justify-content: center;
+            text-align: center;
+            font-family: var(--nav-title-font);
+            padding: 10px;
+            font-size: 20px;
+            color: darkred;
+            
+        }
+        .iconbar{
+            font-family: var(--prim-font);
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+            justify-content: center;
+            padding: 50px;
+           
+        }
+         .iconbarcontent img{
+            width: 80px
+         }
+        .iconbarcontent{
+            text-align: center;
+        }
+        .videobar{
+            display: grid;
+            grid-template-columns: repeat(2,1fr); 
+            justify-content: center;
+            padding: 5px;
+        }
+        .videobar video{
+            width: 100%;
+            height: 100%;
+        }
+        .videobarcontent{
+            text-align: center;
+
+        }
+        
+        .imagegallery{
+            display: grid;
+            grid-template-columns: repeat(4,1fr); 
+            justify-content: center;
+            padding: 5px;
+        }
+        .imagegallery img{
+            width: 100%;
+            height: 300px;
+        }
+        .imagegallerycontent{
+            text-align: center;
+        }
+        .information{
+            font-family: var(--prim-font);
+            display:flex;
+            gap:20px;
+            justify-content: center;
+            padding:100px;
+            padding-top: 30px ;
+        }
+        .information img{
+            width: 250px;
+            height: 250px;
+            border-radius: 25px;
+        }
+        .informationcontent{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 25px;
+            box-shadow: 6px 6px black;
+        }
+        .credit {
+            font-family: var(--nav-title-font);
+            text-align: center;
+            font-size: 2rem;
+            color: Black;
+        }
+        @media screen and (max-width: 1135px) {
+            #navbar {
+                flex-direction: column;
+            }
+
+            #title {
+                position: relative;
+                right: 150px;
+            }
+
+            #navbar ul li a {
+                padding: 0px 20px;
+            }
+
+            #login-btn {
+                position: relative;
+                left: 150px;
+                bottom: 85px;
+            }
+
+            /* #signin-btn {
+                position: relative;
+                left: 240px;
+                bottom: 119px;
+            } */
+
+        }
+
+        @media screen and (max-width: 730px) {
+            .misc-links {
+                margin-left: 5px;
+            }
+
+            .misc-links li a {
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (max-width: 590px) {
+            #login-btn {
+                position: relative;
+                left: 100px;
+                bottom: 85px;
+            }
+
+            /* #signin-btn {
+                position: relative;
+                left: 190px;
+                bottom: 119px;
+            } */
+
+            .misc-links li {
+                padding: 0px 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #title {
+                position: relative;
+                right: 100px;
+            }
+
+            #navbar ul li {
+                font-size: 1rem;
+            }
+
+            #login-btn {
+                position: relative;
+                left: 50px;
+                bottom: 80px;
+                font-size: 0.5rem;
+            }
+
+            /* #signin-btn {
+                position: relative;
+                left: 140px;
+                bottom: 114px;
+                font-size: 0.5rem;
+            } */
+
+            .misc-links li a {
+                font-size: 6px;
+            }
+        }
+
+        @media screen and (max-width: 390px) {
+
+
+            #navbar a button {
+                padding: 3px 10px;
+                margin: 0px 0px;
+                font-size: 0.8rem;
+            }
+
+            #login-btn {
+                top: -73px;
+            }
+
+            /* #signin-btn {
+                position: relative;
+                top: -100px;
+                left: 115px;
+            } */
+
+            #navbar ul li {
+                font-size: 0.8rem;
+            }
+
+            footer img {
+                margin-left: 0px;
+                height: 40px;
+                width: 30px;
+            }
+
+            footer div {
+                font-size: 1rem;
+            }
+
+        }

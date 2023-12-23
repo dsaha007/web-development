@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @font-face {
+        font-family: "Lora";
+        src: url("fonts/Lora-VariableFont_wght.ttf");
+        }
+        :root {
+        --all-font: "Lora";
+        }
+        *{
+            font-family: var(--all-font);   
+        }
+        body{
+            background: linear-gradient(rgba(255, 255, 255, .15),rgba(255, 255, 255, .15)), url(Background/pexels-taryn-elliott-4098991.jpg);
+            background-repeat: round;
+            max-width: max-content;
+            margin: auto;
+            padding: 10%;
+            text-align: center;
+            background-position-x: left;
+            background-blend-mode: color;
+        }
+        .box{
+            padding:50px;
+            border: 10px solid;
+            box-shadow: 40px red;
+            border-radius :70px ;
+            text-align: center;
+            height: 100%;
+            width:700px;
+
+        }
+        .button{
+            width: 250px; height: 50px; 
+            border-radius :10px ;
+            display: inline-block;
+        }
+        .credit {
+            font-family: var(--nav-title-font);
+            text-align: center;
+            font-size: 2rem;
+            color: darkred;
+            background-color: lightpink;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header  >
+        <h1  style="font-size: xx-large; color: darkred; background-color: lightpink;border-radius: 30px;">WELCOME TO THE DRAMA GALAXY</h1>
+    </header>
+    <br>
+    <img src="Icons/images.png" width="300px" style="border-radius: 200px;">
+    <br>
+    <div class="box">
+        <h1 style="text-align: center; font-size: xx-large; color: darkred; background-color: lightpink; border-radius: 30px;">LOGIN</h1>
+        <h1 style="text-align: center; color: black;">----------------------------------------</h1>
+        <img src="Icons/circle-user-solid.svg" alt="user" width="50px" height="50px" style="display: inline-block;"> 
+        <input class="button" type="text" placeholder="Enter your Username">
+        <br><br>
+        <img src="Icons/lock-solid.svg" alt="password"  height="50px" style="display: inline-block;"> 
+        <input class="button" type="password" placeholder="Enter your Password">
+        <br><br>
+        <input type="checkbox" ><span style="color: darkred; font-size: large;background-color: lightpink; border-radius: 30px">Remember Me</span>
+        <br><br>
+        <button class="button" style="background-color: lightpink;"><a href="/HTML DAY 3/TASK-7/index.html" style="color: darkred; font-size: large;">Submit</a></button>
+    </div>
+    <div class="socialmedia" style="display: flex; justify-content: center;gap:10px; padding: 50px;padding-bottom: 1px;">
+        <a href="https://www.facebook.com/debayan.saha.50?mibextid=puAhwszkLizsjj5x" alt="facebook" target="_blank"><img
+                src="Icons/5305154_fb_facebook_facebook logo_icon.svg" width="50px"></a>
+    
+        <a href="https://instagram.com/_neoferds._?igshid=MzMyNGUyNmU2YQ==" alt="instagram" target="_blank"><img
+                src="Icons/1161953_instagram_icon.png" width="50px"></a>
+    
+        <a href="https://twitter.com/neoferds" alt="twitter" target="_blank"><img
+                src="Icons/11053969_x_logo_twitter_new_brand_icon.png" width="50px"></a>
+    
+        <a href="https://github.com/dsaha007" alt="github" target="_blank"><img
+                src="Icons/211904_social_github_icon.png" width="50px"></a>
+    
+        <a href="https://in.linkedin.com/in/debayan-saha-020913251" alt="linkedin" target="_blank"><img
+                src="Icons/104493_linkedin_icon.png" width="50px"></a>
+    </div>
+    <div class="credit">Created with ❤️ by <span>Debayan Saha</span> &copy; all rights reserved!</div>
+</body>
+</html>
