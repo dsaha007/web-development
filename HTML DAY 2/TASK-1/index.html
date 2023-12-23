@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body {
+            padding: 5px;
+            margin: 5px;
+            border: 3px;
+            border-color: black;
+            border-style: solid;
+        }
+        header {
+            color: black;
+            background-color: burlywood;
+            padding: 1px;
+        }
+        #main1 {
+            background-color: pink;
+            padding: 1px;
+            margin-left: 0px;
+        }
+        .left {
+            background-color: white;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+        .right {
+            font-size: large;
+            background-color: rgb(147, 230, 238);
+            padding-right: 15%;
+            padding-left: 15%;
+            text-align: justify;
+            width: 75px;
+            position: relative;
+        }
+        
+        .list{
+            position: absolute;
+            left:15%;
+            font-size: larger;
+            line-height: 3rem;
+
+        }
+        .main {
+            display: flex;  
+        }
+        
+
+        @media screen and (max-width: 600px) {
+            .left, .right {
+                width: 100%;
+            }
+        } 
+    </style>
+</head>
+<body>
+<header>
+    <h1 style="text-align: justify;font-size: 60px; padding-left: 15px;">Website Name</h1>
+</header>
+<section id="main1">
+    <h3 style="text-align: justify; padding-left: 5%; font-size: larger;">Home | About Us | Gallery | Contact Us</h3>
+</section>
+<div class="main">
+    <div class="left">
+        <h2 style="font-size: 30px;">Sub Heading</h2>
+        <p>
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reprehenderit ut consectetur nisi soluta architecto at quo voluptatibus cupiditate beatae corporis libero culpa facere, enim perferendis voluptatem, dolores maxime. Dolores!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente laudantium reprehenderit molestias, atque cumque iusto maiores, quasi cum totam minus alias velit. Eos quae fugit, ea ducimus aspernatur. Dolor asperiores illo aspernatur ducimus perspiciatis?
+            <br><br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum dolorum quidem modi aperiam expedita suscipit! Rem eaque soluta corrupti eligendi maxime? Dolorem mollitia nihil provident repudiandae eligendi, laudantium tenetur ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </b>
+            <br><br>
+            
+        </p>
+    </div>
+    <div class="right">
+        <div class="list">
+            <ul>
+                <b>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Gallery</li>
+                    <li>Contact Us</li>
+                </b>
+            </ul>
+        </div>   
+    </div>
+</div>
+<footer id="main1">
+    <h3 style="text-align: right; padding-right: 5%; font-size: larger;">Website name@copyright.</h3>
+</footer>
+</body>
+</html>
